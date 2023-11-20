@@ -21,8 +21,8 @@
 # Напишите программу, которая вычисляет стоимость введенного пользователем слова k и выводит его. 
 # Будем считать, что на вход подается только одно слово, которое содержит либо только английские, либо только русские буквы.
 
-first = 'ноутбук'
-k = first.upper()
+k = 'ноутбук'
+f = k.upper()
 dict1 = {
     1: "АВЕИНОРСТAEIOULNSTR",
     2: "ДКЛМПУDG",
@@ -33,6 +33,6 @@ dict1 = {
     10: "ФЩЪQZ"
 }
 
-result = [key for i in k for key, value in dict1.items() if i in value]
+result = [key for i in f for key, value in dict1.items() if i in value]
 
 print(sum(result))
